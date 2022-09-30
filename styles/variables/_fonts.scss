@@ -5,37 +5,92 @@
     font-family: "Open Sans";
 }
 
-html{
+html {
     font-size: 16px;
 }
+
 //encabezados
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Lato';
     font-weight: bold;
 }
-h1{
+
+h1 {
     font-size: 4.25rem;
     line-height: 76px;
 }
-h2{
+
+h2 {
     font-size: 3.5rem;
     line-height: 64px;
 }
-h3{
+
+h3 {
     font-size: 4.25rem;
     line-height: 54px;
 }
-h4{
+
+h4 {
     font-size: 2.875rem;
     line-height: 46px;
 }
-h5{
+
+h5 {
     font-size: 1.875rem;
     line-height: 38px;
 }
-h6{
+
+h6 {
     font-size: 1.5rem;
     line-height: 32px;
 }
 
+.italic {
+    font-style: italic;
+}
 
+.bold{
+    font-weight: bold;
+}
+
+.font {
+    &_lead {
+        font-size: 1.375rem;
+        line-height: 30px;
+        font-weight: bold;
+    }
+
+    &_subtitule {
+        font-size: 1.25rem;
+        line-height: 28px;
+    }
+
+    &_body {
+        font-size: 1rem;
+        line-height: 24px;
+        &_large{
+            font-size: 1.125rem;
+            line-height: 26px;
+        }
+    }
+    &_overline{
+        font-size: 0.75rem;
+        line-height: 20px;
+        font-weight: 500;
+    }
+}
+
+.label{
+    font-size: 0.875rem;
+    line-height: 22px;
+}
+
+.tag{
+    font-size: 0.75rem;
+    line-height: 20px;
+}
