@@ -3,6 +3,7 @@
 
 * {
     font-family: "Open Sans";
+    margin: 0;
 }
 
 html {
@@ -76,6 +77,10 @@ h6 {
         &_large{
             font-size: 1.125rem;
             line-height: 26px;
+        }
+        &_small{
+            font-size: 0.875rem;
+            line-height: 22px;
         }
     }
     &_overline{

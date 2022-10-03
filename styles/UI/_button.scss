@@ -1,4 +1,4 @@
-.button{
+.button {
     font-size: 1.125rem;
     line-height: inherit;
     font-weight: 600;
@@ -7,27 +7,60 @@
     text-decoration: none;
     width: fit-content;
     display: flex;
-    align-items: center;
-    &_small{
+    align-items: stretch;
+    transition: 0.25s ease-out;
+    &_small {
         font-size: 1rem;
         line-height: 24px;
     }
-    i{
-        font-size: 20px;
-        width: 24px;
-        height: 24px;
-        &::before{
+    i {
+        font-size: 22px;
+        width: auto;
+        height: auto;
+        padding-top: 1px;
+        &::before {
             font-weight: 600;
+            display: flex;
+            align-items: center;
+            width: auto;
+            height: 100%;
         }
     }
-    &_primary{
-        background-color: #FF0844;
+    &_primary {
+        background-color: $red-6;
         color: white;
+        &:hover {
+            background-color: $red-8;
+        }
+        &:focus-visible {
+            border: 3px solid $red-2;
+        }
+        &:active{
+            background-color: $red-9;
+        }
     }
-    &_secondary{
-
+    &_secondary {
+        border: 2px solid $red-6;
+        color: $red-6;
+        &:hover {
+            border-color: $red-8;
+            color: $red-8;
+        }
+        &:focus-visible {
+            background-color: $red-1;
+        }
+        &:active{
+            border-color: $red-9;
+            color: $red-9;
+        }
     }
-    &_tertiary{
-
+    &_tertiary {
+        color: $red-6;
+        &:hover {
+            color: $red-8;
+        }
+        &:active{
+            color: $red-9;
+        }
     }
 }
